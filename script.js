@@ -1,3 +1,7 @@
+import 'lodash-es';
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
 //CommonJs
 const login = require('./login.js');
 console.log(login);
@@ -37,3 +41,12 @@ console.log(login);
 // let asd = sot();
 // console.log(asd.a);
 // console.log(asd.sotibOl());
+
+class Person {
+  constructor(name) {
+    this.name = name;
+    console.log(name);
+  }
+}
+
+const neo = new Person('Neo');
